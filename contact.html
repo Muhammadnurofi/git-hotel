@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nurofi Grand hotel</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	</head>
+  	<style type="text/css">
+		.container{
+			width : 100%;
+			margin : 0 auto 0 auto;
+		}
+		.con-parent{
+			width: 760px;
+		}
+		.container-main{
+			background-color:aquamarine;
+			margin: 20px auto 0;
+				margin-top: 20px;
+				margin-right: auto;
+				margin-bottom: 0px;
+				margin-left: auto;
+		}
+		#logo{
+			float: left;
+			width: 100px;
+		}
+		#header-menu{
+			float: left;
+			margin-top: 47px;
+			width: 570px;
+		}
+		#header-menu-ul{
+			color: white;
+			list-style: none outside none;
+				list-style-type: none;
+				list-style-image: none;
+				list-style-position: none;
+			margin: 0;
+				margin-top: 0px;
+				margin-right: 0px;
+				margin-bottom: 0px;
+				margin-left: 0px;
+			padding: 0;
+		}
+		#header-menu ul li : first-child{
+			margin-left: 0px;
+		}
+		#header-menu ul li{
+			float: left;
+			margin-left: 40px;
+		}
+		#header-menu ul{
+			color: white;
+			list-style: none outside none;
+				list-style-type: none;
+				list-style-image: none;
+				list-style-position: outside;
+		}
+		.al-bold{
+			font-weight: bold;
+			font-size: 15px;
+		}
+		.al{
+			color: black;
+		}
+		.clear{
+			clear: both;
+		}
+		#slider{
+			background-color: aquamarine;
+			height: 330px;
+			position: relative;
+		}
+		#button-slide-left{
+			position: absolute;
+			left: -40px;
+			top: 135px;
+		}
+		#button-slide-right{
+			position: absolute;
+			right: -38px;
+			top: 135px;
+		}
+		#element{
+			display: block;
+			background: transparent;
+				background-color: transparent;
+				background-image: url();
+				background-repeat: no-repeat;
+				background-attachment: scroll;
+				background-position: center center;
+				background-clip: border-box;
+				background-origin: padding-box;
+				background-size: auto auto;
+		}
+		#slide-image{
+			float: left;
+			height: 330px;
+			width: 760px;
+			position: absolute;
+		}
+		#slide-bar{
+			background-image: url();
+			height: 77px;
+			position: relative;
+			top: 253px;
+		}
+		#menu-nav-index{
+			float: left;
+			margin-top: 14px;
+			margin-left: 18px;
+			width: 455px;
+		}
+		#menu-nav-text-index{
+			color: #FFFFFF;
+			float: left;
+			font-weight: bold;
+			margin-left: 15px;
+			white-space: pre-line;
+			width: 300px;
+		}
+		.panel-open{
+			display: block;
+		}
+		.panel-container{
+			float: left;
+		}
+		#panel-book-show{
+			left: 461px;
+			position: absolute;
+			top: 250px;
+			width: 196px;
+		}
+		.panel-book-form : first-child{
+			margin-top: 7px;
+		}
+		.panel-book-form{
+			color: #FFF;
+			font-size: 14px;
+			font-weight: bold;
+			width: 200px;
+		}
+		.panel-book-input-show{
+			border: 1px solid #988F8F;
+		}
+		.select{
+			color: #fff;
+			background-color: #363636;
+			width: 176px;
+		}
+		.panel-book-form{
+			position: absolute;
+			top: 46px;
+			color: rgb(255,255,255);
+			font-weight: bold;
+			width: 105px;
+			left: 188px;
+		}
+		.red{
+			color: #faddde;
+			border: solid 1px #980c10;
+				border-top-width: 1px;
+				border-right-width: 1px;
+				border-bottom-width: 1px;
+				border-left-width: 1px;
+				border-top-style: solid;
+				border-right-style: solid;
+				border-bottom-style: solid;
+				border-top-color: rgb(152,12.16);
+				border-right-color: rgb(152,12.16);
+				border-bottom-color: rgb(152,12.16);
+				border-left-color: rgb(152,12.16);
+				-moz-border-top-colors: none;
+				-moz-border-right-colors: none;
+				-moz-border-bottom-colors: none;
+				-moz-border-left-colors: none;
+				border-image-source: none;
+				border-image-slice: 100% 100% 100% 100%;
+				border-image-width: 1 1 1 1;
+				border-image-outset: 0 0 0 0;
+				border-image-repeat: stretch stretch;
+				background: -moz-linear-gradient(top, #ed1c24, #aa1317);
+			    background-color: transparent;
+			    background-image: -moz-linear-gradient(center top , rgb(237, 28, 36), rgb(170, 19, 23));
+			    background-repeat: repeat;
+			    background-attachment: scroll;
+			    background-position: 0% 0%;
+			    background-clip: border-box;
+			    background-origin: padding-box;
+			    background-size: auto auto;
+		}
+		.button{
+			display: inline-block;
+			vertical-align: baseline;
+			margin: 0 2px;
+				margin-top: 0px;
+				margin-right: 2px;
+				margin-bottom: 0px;
+				margin-left: 2px;
+			outline: none;
+				outline-width: medium;
+				outline-style: none;
+				outline-color: -moz-use-text-color;
+			cursor: pointer;
+			text-align: center;
+		}
+		#info{
+			background: #fff;
+				background-color: rgb(255, 255, 255);
+				background-image: none;
+				background-repeat: repeat;
+				background-attachment: scroll;
+				background-position: 0% 0%;
+				background-clip: border-box;
+				background-origin: padding-box;
+				background-size: auto auto;
+		}
+		#info-header{
+			padding: 22px;
+				padding-top: 22px;
+				padding-right: 22px;
+				padding-bottom: 22px;
+				padding-left: 22px;
+			font-size: 14px;
+			background-color: #00FF66;
+		}
+		#info-left{
+			float: left;
+			width: 180px;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 12px;
+			color: #363636;
+		}
+		.font-label{
+			font-size: 18px;
+			font-weight: bold;
+		}
+		#info-left-p{
+			font-size: 13px;
+		}
+		.info-room{
+			float: left;
+			width: 160px;
+			color: #363636;
+			padding: 10px;
+				padding-top: 10px;
+				padding-right: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+			margin-top: 12px;
+		}
+		.standard{
+			border-radius: 5px 5px 5px 5px;
+			    border-top-left-radius: 5px;
+			    border-top-right-radius: 5px;
+			    border-bottom-right-radius: 5px;
+			    border-bottom-left-radius: 5px;
+			height: 97px;
+			width: 158px;
+		}
+		.image-frame{
+			border: 1px solid #FFFFFF;
+				border-top-width: 1px;
+				border-right-width: 1px;
+				border-bottom-width: 1px;
+				border-left-width: 1px;
+				border-top-style: solid;
+				border-right-style: solid;
+				border-bottom-style: solid;
+				border-left-style: solid;
+				border-top-color: rgb(255,255,255);
+				border-right-color: rgb(255,255,255);
+				border-bottom-color: rgb(255,255,255);
+				border-left-color: rgb(255,255,255);
+				-moz-border-top-colors: none;
+				-moz-border-right-colors: none;
+				-moz-border-bottom-colors: none;
+				-moz-border-left-colors: none;
+				border-image-source: none;
+				border-image-slice: 100% 100% 100% 100%;
+				border-image-width: 1 1 1 1;
+				border-image-outset: 0 0 0 0;
+				border-image-repeat: stretch stretch;
+			box-shadow: 0 5px 5px rgb(0,0,0,0.35)
+			overflow: hidden;
+				overflow-x: hidden;
+				overflow-y: hidden; 
+		}
+		.image-frame a{
+			text-decoration: none;
+				text-decoration-color: -moz-use-text-color;
+				text-decoration-line: none;
+				text-decoration-style: solid;
+		}
+		.info-room-label{
+			color: #da251c;
+			font-size: 18px;
+		}
+		.info-room-label-a{
+			color: #da251c;
+			text-decoration: none;
+				text-decoration-color: -moz-use-text-color;
+				text-decoration-line: none;
+				text-decoration-style: solid;
+		}
+		.info-room-info{
+			font-size: 15px;
+			font-style: italic;
+		}
+		.info-room-detail{
+			font-size: 11px;
+		}
+		.container-main-footer-index{
+			margin: 0 auto;
+				margin-top: 0px;
+				margin-right: auto;
+				margin-bottom: 0px;
+				margin-left: auto;
+			width: 762px;
+		}
+		#tab{
+			background: linear-gradient(to right, rgba(54,54,54,1) 0%,rgba(149,149,149,1) 49%,rgba(54,54,54,1) 100%);
+			    background-color: transparent;
+			    background-image: linear-gradient(to right, rgb(54, 54, 54) 0%, rgb(149, 149, 149) 49%, rgb(54, 54, 54) 100%);
+			    background-repeat: repeat;
+			    background-attachment: scroll;
+			    background-position: 0% 0%;
+			    background-clip: border-box;
+			    background-origin: padding-box;
+			    background-size: auto auto;
+			    height: 8px;
+		}
+		#footer{
+			color: green;
+			font-size: 12px;
+			height: 50px;
+		}
+		#footer-info{
+			float: left;
+			margin-left: 40px;
+			margin-top: 14px;
+		}
+		#footer-menu{
+			float: right;
+			margin-right: 40px;
+			margin-top: 14px;
+
+		}
+		#footer-menu ul{
+			color: #fff;
+			list-style: none outside none;
+			    list-style-type: none;
+			    list-style-image: none;
+			    list-style-position: outside;
+			margin: 0;
+			    margin-top: 0px;
+			    margin-right: 0px;
+			    margin-bottom: 0px;
+			    margin-left: 0px;
+			padding: 0;
+			    padding-top: 0px;
+			    padding-right: 0px;
+			    padding-bottom: 0px;
+			    padding-left: 0px;
+		}
+		#footer-menu ul li{
+			float: left;
+			margin-left: 10px;
+		}
+		.al : link{
+			text-decoration: none;
+				text-decoration-line: none;
+				text-decoration-color: -moz-use-text-color
+				text-decoration-style: solid;
+			color: #fff;
+		}
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+		    width: 80%;
+		    margin: auto;
+		}
+	</style>
+	<link rel="shortcut icon" href="img/Nurofi Hotel Grand.png">
+	<body style="background-color:aquamarine">
+		<div class="container">
+			<div class="container-main con-parent">
+				<div class="container-main-header">
+					<div id="logo">
+						<a href="#">
+							<img src="img/Nurofi Hotel Grand.png" width="100px" height="100px;">
+						</a>
+					</div>
+					<div id="header-menu">
+						<ul>
+							<li>
+								<a class="al al bold" href="#">Profile</a>
+								<li>|</li>
+							</li>
+							<li>
+								<a class="al al bold" href="#">Facilities</a>
+								<li>|</li>
+							</li>
+							<li>
+								<a class="al al bold" href="#">Gallery</a>
+								<li>|</li>
+							</li>
+							<li>
+								<a class="al al bold" href="contact.html">Contact</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<h1>Contact Us</h1>
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Contact</li>
+				</ol>
+				<br>
+				<div id="slider">
+					<div id="button-slide-left">
+						<a class="left carousel-control" href="#thecarousel" dataslide="prev">
+							<i class="glyphicon glyphicon-chevron-left" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div id="button-slide-right">
+						<a class="left carousel-control" href="#thecarousel" dataslide="next">
+							<i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div id="slide-image">
+						
+					</div>
+					<div id="slide bar">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner" role="listbox">
+								    <div class="item active">
+								      <img src="img/petugas1.jpg" alt="...">
+								      <div class="carousel-caption">
+								        ...
+								      </div>
+								    </div>
+								    <div class="item">
+								      <img src="..." alt="...">
+								      <div class="carousel-caption">
+								        ...
+								      </div>
+								    </div>
+								    ...
+								  </div>
+						</div>
+						<div id="menu-nav-index">
+							
+							<!-- <div class="menu-nav-text-index">
+							</div> -->
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="info">
+					<div id="info-header">
+						<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Addres : Jl.R E Martadinata No.II , Purwakarta , Jawa Barat</p>
+						<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>   No.Hp  : 0858-6234-1395</p>
+						<p><img src="img/bbm.png" alt="icon" width="22px" height="22px"></span>    Pin    : D013CE8D</p>
+						<p><img src="img/gmail.jpg" alt="icon" width="22px" height="22px"></span>  Email   : Nurofi Hotel_Grand@gmail.com</p>
+					</div>
+					<br>
+					<div class="col-md-12">
+						<div class="row">
+				        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91.94850260630899!2d107.46101925780168!3d-6.541511834022557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690e164dd31e15%3A0x4f50bb05c4fa410a!2sGraha+Citalang+Permai!5e1!3m2!1sid!2sid!4v1472629724262" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				        	<div class="container">
+				        		<br>
+							  <form class="form-horizontal">
+							    <div class="form-group">
+							      <label class="control-label col-sm-2" for="email">Name:</label>
+							      <div class="col-sm-10">
+							        <input type="name" class="form-control" placeholder="Name">
+							      </div>
+							    </div>
+							    <div class="form-group">
+							      <label class="control-label col-sm-2" for="pwd">Email:</label>
+							      <div class="col-sm-10">          
+							        <input type="email" class="form-control" placeholder="Email">
+							      </div>
+							    </div>
+							    <div class="form-group">
+							      <label class="control-label col-sm-2" for="pwd">Password:</label>
+							      <div class="col-sm-10">          
+							        <input type="password" class="form-control" id="pwd" placeholder="password">
+							      </div>
+							    </div>
+							    <div class="form-group">
+								  <label class="control-label col-sm-2" for="comment">Pesan:</label>
+								  <textarea id="message" name="message" cols="59" rows="6"></textarea>
+								</div>
+							    <div class="form-group">        
+							      <div class="col-sm-offset-2 col-sm-10">
+							        <button type="submit" class="btn btn-success">Submit</button>
+							        <button type="submit" class="btn btn-warning">Cancel</button>
+							      </div>
+							    </div>
+							  </form>
+							</div>
+				        </div>
+				    </div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="container-main-footer-index con-parent">
+				<div id="tab"></div>
+				<div id="footer">
+					<div id="footer-info">Copyright © 2016 Nurofi Grand Hotel. All rights reserved</div>
+					<div id="footer-menu">
+						<ul>
+							<li>
+								<a class="al" href="jquery-slideshow.html">Home</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a class="al" href="">About Us</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a class="al" href="">Event</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-39567371-1']);
+			  _gaq.push(['_setDomainName', 'cherry-homes.net']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+			$(document).ready(function() {
+	
+				/**
+				 * Menu Show Hide
+				 */
+				
+				$( "#button-room" ).click(function(e) {
+					e.preventDefault();
+					e.stopPropagation();
+
+					$( "#panel-container-book" ).toggleClass( "panel-open" );
+					return false;
+					
+				});
+
+				$('.container').click(function(e) {
+					if ($( "#panel-container-book" ).hasClass( "panel-open" )) {
+						$( "#panel-container-book" ).removeClass( "panel-open" );
+					}
+					if($('#image-preview-container')){
+						$('#image-preview-container').hide();
+					}
+					e.stopPropagation();
+				});
+
+				$('#panel-container-book').click(function(e) {
+					e.stopPropagation();
+					return false;
+				});
+				
+				$('#booknow').click(function(e) {
+					e.stopPropagation();
+					e.preventDefault();
+					
+					// TOngam Says: May be we will use this part
+			//		if(roomcode == ''){
+			//			alert('Choose your room.');
+			//			return false;
+			//		}
+
+			//		var roomcode = $('#roomform').val();
+
+					var start = $('#dtpickfrom').datepicker('getDate');
+					var end   = $('#dtpickto').datepicker('getDate');
+					var days   = (end - start)/1000/60/60/24;
+			//		if(roomcode == ''){
+			//			alert('Chose your room.');
+			//			return false;
+			//		}else 
+					if(days<0 || start == '' || end == ''){
+						alert('Invalid date selection.');
+						return false;
+					}
+					
+			//		window.open('booking/?check_in_date=' + $('#dtpickfrom').val() + '&check_out_date=' + $('#dtpickto').val() + '&number_of_rooms=1&adults=1&children=0');
+					window.open('http://www.agoda.com/the-cherry-homes-hotel-residence/hotel/bandung-id.html');
+				});
+				
+				/* Date Picker */
+				$( "#dtpickto" ).datepicker();
+				
+				var today = new Date();
+				var nextdate = new Date(today);
+				var dd = today.getDate();
+				var mm = today.getMonth()+1; //January is 0!
+
+				var yyyy = today.getFullYear();
+				if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} today = yyyy+'-'+mm+'-'+dd;
+				$( "#dtpickfrom" ).val(today);
+				
+				nextdate.setDate(nextdate.getDate()+1);
+				var tomorrow = new Date(nextdate);
+				var dd = tomorrow.getDate();
+				var mm = tomorrow.getMonth()+1; //January is 0!
+				var yyyy = tomorrow.getFullYear();
+				if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} tomorrow = yyyy+'-'+mm+'-'+dd;
+				$( "#dtpickto" ).val(tomorrow);
+				
+				$("#dtpickfrom").datepicker({
+					minDate: 0,
+					onSelect: function(dateText, inst) {
+						var actualDate = new Date(dateText);
+						// Next day
+						var newDate = new Date(actualDate.getFullYear(), actualDate.getMonth(), actualDate.getDate()+1);
+			//			var newDate = new Date(actualDate.getFullYear(), actualDate.getMonth(), actualDate.getDate());
+						$('#dtpickto').datepicker('option', 'minDate', newDate );
+					}
+				});
+				
+				
+				/* Slider by Tongam */
+				
+				var imagesfile = [ "assets/home.jpg", "assets/header1.jpg", "assets/header2.jpg", "assets/header3.jpg", "assets/header4.jpg", "assets/header5.jpg", "assets/header6.jpg" ];
+				var stepdelay = 7000;
+				var imagepos = 0;
+				var image = $('#slide-image');
+				
+				function changeImage(){
+					if(imagepos > imagesfile.length-1){
+						imagepos = 0; //Reset
+					}else if(imagepos < 0){
+						imagepos = imagesfile.length-1;
+					}
+					image.fadeOut(1000, function () {
+						image.css("background", "url('" + imagesfile[imagepos] + "') no-repeat scroll center center");
+						image.fadeIn(1000);
+					});
+				}
+				
+				/* Preload */
+				$.fn.preload = function() {
+					this.each(function(){
+						$('<img/>')[0].src = this;
+					});
+				}
+				$(imagesfile).preload(); //go go go
+				
+				/* First starting image */
+				changeImage(imagepos);
+				/* Next Slider */
+				setInterval(function() {
+					imagepos++;
+					changeImage();
+				}, stepdelay);
+				/* Navigation */
+				$('#next').click(function(e) {
+					imagepos++;
+					changeImage();
+				});
+				$('#prev').click(function(e) {
+					imagepos--;
+					changeImage();
+				});
+				/* Eof Slider */
+				
+				/* Form Submit for contact */
+				function isValidEmailAddress(emailAddress) {
+					var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+					return pattern.test(emailAddress);
+				}
+				
+				$('#sendmail').submit(function() {
+					if($('#name').val() == ""){
+						alert('Please input your name.');
+						$('#name').focus();
+						return false;
+					}
+					if(!isValidEmailAddress($('#email').val())){
+						alert('Please input correct email.');
+						$('#email').focus();
+						return false;
+					}
+					if($('#subject').val() == ""){
+						alert('Please input your subject.');
+						$('#subject').focus();
+						return false;
+					}
+					if($('#message').val() == ""){
+						alert('Please input your message.');
+						$('#message').focus();
+						return false;
+					}
+					
+					if(!confirm('Are you sure to send this message?'))
+					return false;
+					
+					return true;
+				});
+				
+				$('#submitmail').click(function(e) {
+					$('#sendmail').submit();
+				});
+			});
+
+			// Room Animation Images Preview
+			var curr_index = 0;
+
+			$(document).ready(function () {
+				
+			    $("#button-preview-left").click(function(e) {
+					curr_index--;
+					if(curr_index < 0){
+						curr_index = ($("a.preview").length-1);
+					}
+					showPreview(curr_index, false);
+					e.preventDefault();
+					e.stopPropagation();
+			    });
+				
+			    $("#button-preview-right").click(function(e) {
+					curr_index++;
+					if(curr_index > ($("a.preview").length-1)){
+						curr_index = 0;
+					}
+					showPreview(curr_index, false);
+					e.preventDefault();
+					e.stopPropagation();
+			    });
+
+			    $("a.preview").click(function(e) {
+					curr_index = $("a.preview").index(this);
+					showPreview(curr_index, true);
+					e.preventDefault();
+					e.stopPropagation();
+			    });
+				
+				$('#image-preview-container').click(function(e) {
+					e.stopPropagation();
+				});
+				
+				function showPreview(index, anim) {
+					var imgUrl = $("a.preview").eq(index).attr("href");
+					$('#image-preview').html('<img src="assets/loading.gif">');
+					$('<img src="'+ imgUrl +'">').load(function() {
+						$('#image-preview').html('');
+						$(this).appendTo('#image-preview');
+					})
+					if(anim) {
+						if (!$("#image-preview-container").is(":hidden")) {
+							$("#image-preview-container").hide();
+						}
+						$("#image-preview-container").slideDown("fast");
+						
+						$("#image-preview-container").dialog({
+							autoOpen: true,
+							closeOnEscape: true,
+							resizable: true,
+							draggable: false,
+							stack: true,
+							open: function(event, ui) { 
+								//hide close button.
+								$(this).parent().children('.ui-dialog-titlebar').hide();
+							},
+							modal: true
+						});
+					}
+				}
+			});
+		</script>
+		<div id="ui-datepicker-div"></div>
+	</body>
+</html>
