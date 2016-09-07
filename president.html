@@ -368,6 +368,13 @@
 			float: left;
 			margin-left: 10px;
 		}
+		.caption-text-small {
+			padding: 40px;
+		    	padding-bottom: 10px;
+		    	padding-top: 10px;
+		    	padding-left: 10px;
+		    	padding-right: 10px;
+		}
 		body{
 			font-family:arial
 		}
@@ -425,10 +432,9 @@
 					</div>
 					<div class="clear"></div>
 				</div>
-				<h1>Nurofi Hotel Grand Gallery</h1>
+				<h1>Nurofi Hotel Grand Type Class</h1>
 				<ol class="breadcrumb">
-				  <li><a href="#">Home</a></li>
-				  <li class="active">Gallery</li>
+				  <li><a href="#">Presidential Room</a></li>
 				</ol>
 				<div id="slider">
 					<div id="button-slide-left">
@@ -498,69 +504,15 @@
 						<p><img src="img/gmail.jpg" alt="icon" width="22px" height="22px"></span>  Email   : Nurofi Hotel_Grand@gmail.com</p>
 					</div>
 					<br>
-					<center><h2>Gallery</center></h2>
+					<center><h2>Presidential Room</center></h2>
 					<div class="col-md-12">
 						<div class="row">
-							<div class="col-sm-6 col-md-4">
-				            	<div class="thumbnail">
-				              		<div class="caption">
-				                		<a class="thumbnail fancybox" rel="lightbox" href="img/led.jpg">
-										    <img class="img-responsive" alt="First title here" src="img/led.jpg" width="400px" height="400px" />
-										</a>
-				              		</div>
-				            	</div>
-				          	</div>
-				          	<div class="col-sm-6 col-md-4">
-				            	<div class="thumbnail">
-				              		<div class="caption">
-				                		<a class="thumbnail fancybox" rel="lightbox" href="img/Desain-Interior-Rumah.jpg">
-										    <img class="img-responsive" alt="First title here" src="img/Desain-Interior-Rumah.jpg" width="400px" height="400px" />
-										</a>
-				              		</div>
-				            	</div>
-				          	</div>
-				          	<div class="col-sm-6 col-md-4">
-				            	<div class="thumbnail">
-				              		<div class="caption">
-				                		<a class="thumbnail fancybox" rel="lightbox" href="img/Desain-Ruang-Makan-Kecil.jpg">
-										    <img class="img-responsive" alt="First title here" src="img/Desain-Ruang-Makan-Kecil.jpg" width="400px" height="400px" />
-										</a>
-				              		</div>
-				            	</div>
-				          	</div>
-				        </div>
-				    </div>
-				    <div class="col-md-12">
-						<div class="row">
-				        	<div class="col-sm-6 col-md-4">
-				            	<div class="thumbnail">
-				              		<div class="caption">
-				                		<a class="thumbnail fancybox" rel="lightbox" href="img/ruang-meeting.jpg">
-										    <img class="img-responsive" alt="First title here" src="img/ruang-meeting.jpg" width="400px" height="400px" />
-										</a>
-				              		</div>
-				            	</div>
-				          	</div>
-				          	<div class="col-sm-6 col-md-4">
-				            	<div class="thumbnail">
-				              		<div class="caption">
-				                		<a class="thumbnail fancybox" rel="lightbox" href="img/kamar mandi1(2).jpg">
-										    <img class="img-responsive" alt="First title here" src="img/kamar mandi1(2).jpg" width="400px" height="400px" />
-										</a>
-				              		</div>
-				            	</div>
-				          	</div>
-				          	<div class="col-sm-6 col-md-4">
-				            	<div class="thumbnail">
-				              		<div class="caption">
-				                		<a class="thumbnail fancybox" rel="lightbox" href="img/fasilitas2.jpg">
-										    <img class="img-responsive" alt="First title here" src="img/fasilitas2.jpg" width="400px" height="400px" />
-										</a>
-				              		</div>
-				            	</div>
-				          	</div>
-				    
-				        </div>
+							<div class="caption-text-small">
+								<img src="img/presidential.jpg" width="740px">
+								<br><br>
+								<p> Seperti yang telah dibicarakan tadi, Suite Room dapat diperluas menjadi Presidential Suite. Biasanya dikenal juga dengan nama Penthouse yang dimana merupakan lantai teratas dari hotel. Dengan ruangan yang lebih besar, pemandangan dan perlengkapan terbaik yang ditawarkan sebuah hotel dan merupakan kamar termahal dari suatu hotel.</p>
+							</div>
+						</div>
 				    </div>
 					<div class="clear"></div>
 				</div>
@@ -649,22 +601,6 @@
 				//Display the content
 				$('#gallery .content').html(caption);	
 			}
-			$(document).ready(function(){
-		    $('.fancybox').fancybox();
-		});
-		</script>
-
-		<script>
-
-		$(".fancybox").fancybox({
-		    beforeShow : function() {
-		        var alt = this.element.find('img').attr('alt');
-
-		        this.inner.find('img').attr('alt', alt);
-
-		        this.title = alt;
-		    }
-		});
 		</script>
 		<div id="ui-datepicker-div"></div>
 

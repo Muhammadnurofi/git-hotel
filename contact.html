@@ -375,20 +375,39 @@
 				text-decoration-style: solid;
 			color: #fff;
 		}
-		.carousel-inner > .item > img,
-		.carousel-inner > .item > a > img {
-		    width: 80%;
-		    margin: auto;
+		body{
+			font-family:arial
 		}
+
+		.clear {
+			clear:both
+		}
+
+		#gallery {
+			position:relative;
+			height:360px
+		}
+			#gallery a {
+				float:left;
+				position:absolute;
+			}
+			
+			#gallery a img {
+				border:none;
+			}
+			
+			#gallery a.show {
+				z-index:500
+			}
 	</style>
-	<link rel="shortcut icon" href="img/Nurofi Hotel Grand.png">
+	<link rel="shortcut icon" href="img/POSTAGE.png">
 	<body background="img/bg.jpg">
 		<div class="container">
 			<div class="container-main con-parent">
 				<div class="container-main-header">
 					<div id="logo">
 						<a href="#">
-							<img src="img/Nurofi Hotel Grand.png" width="100px" height="100px;">
+							<img src="img/POSTAGE.png" width="100px" height="100px;">
 						</a>
 					</div>
 					<div id="header-menu">
@@ -431,34 +450,40 @@
 						</a>
 					</div>
 					<div id="slide-image">
+						<div id="gallery">
+
+						<a href="#" class="show">
+							<img src="img/petugas1.jpg" alt="petugas" width="760" height="300" title="" alt="" rel="<h3>Flowing Rock</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "/>
+						</a>
 						
+						<a href="#">
+							<img src="img/hotel1.jpg" alt="hotel" width="760" height="330" title="" alt="" rel="<h3>Grass Blades</h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
+						</a>
+						
+						<a href="#">
+							<img src="img/lapdek2.jpg" alt="ruangan" width="760" height="330" title="" alt="" rel="<h3>Ladybug</h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."/>
+						</a>
+
+						<a href="#">
+							<img src="img/lapdek1.jpg" alt="Lightning" width="760" height="330" title="" alt="" rel="<h3>Lightning</h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+						</a>
+						
+						<a href="#">
+							<img src="img/fasilitas1.jpg" alt="Lotus" width="760" height="330" title="" alt="" rel="<h3>Lotus</h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."/>
+						</a>
+						
+						<a href="#">
+							<img src="img/fasilitas2.jpg" alt="Mojave" width="760" height="330" title="" alt="" rel="<h3>Mojave</h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."/>
+						</a>
+							
+						<a href="#">
+							<img src="img/kamar mandi1(2).jpg" alt="Pier" width="760" height="330" title="" alt="" rel="<h3>Pier</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+						</a>
+						<div class="caption"></div>
+					</div>
 					</div>
 					<div id="slide bar">
-						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-								  <!-- Indicators -->
-								  <ol class="carousel-indicators">
-								    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-								    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-								    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-								  </ol>
-
-								  <!-- Wrapper for slides -->
-								  <div class="carousel-inner" role="listbox">
-								    <div class="item active">
-								      <img src="img/petugas1.jpg" alt="...">
-								      <div class="carousel-caption">
-								        ...
-								      </div>
-								    </div>
-								    <div class="item">
-								      <img src="..." alt="...">
-								      <div class="carousel-caption">
-								        ...
-								      </div>
-								    </div>
-								    ...
-								  </div>
-						</div>
+						
 						<div id="menu-nav-index">
 							
 							<!-- <div class="menu-nav-text-index">
@@ -479,7 +504,7 @@
 					<br>
 					<div class="col-md-12">
 						<div class="row">
-				        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91.94850260630899!2d107.46101925780168!3d-6.541511834022557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690e164dd31e15%3A0x4f50bb05c4fa410a!2sGraha+Citalang+Permai!5e1!3m2!1sid!2sid!4v1472629724262" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91.94850260630899!2d107.46101925780168!3d-6.541511834022557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690e164dd31e15%3A0x4f50bb05c4fa410a!2sGraha+Citalang+Permai!5e1!3m2!1sid!2sid!4v1472629724262" width="755" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				        	<div class="container">
 				        		<br>
 							  <form class="form-horizontal">
@@ -541,255 +566,67 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
 		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			  _gaq.push(['_setAccount', 'UA-39567371-1']);
-			  _gaq.push(['_setDomainName', 'cherry-homes.net']);
-			  _gaq.push(['_trackPageview']);
-
-			  (function() {
-			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-			$(document).ready(function() {
+			$(document).ready(function() {		
 	
-				/**
-				 * Menu Show Hide
-				 */
-				
-				$( "#button-room" ).click(function(e) {
-					e.preventDefault();
-					e.stopPropagation();
+				//Execute the slideShow
+				slideShow();
 
-					$( "#panel-container-book" ).toggleClass( "panel-open" );
-					return false;
-					
-				});
-
-				$('.container').click(function(e) {
-					if ($( "#panel-container-book" ).hasClass( "panel-open" )) {
-						$( "#panel-container-book" ).removeClass( "panel-open" );
-					}
-					if($('#image-preview-container')){
-						$('#image-preview-container').hide();
-					}
-					e.stopPropagation();
-				});
-
-				$('#panel-container-book').click(function(e) {
-					e.stopPropagation();
-					return false;
-				});
-				
-				$('#booknow').click(function(e) {
-					e.stopPropagation();
-					e.preventDefault();
-					
-					// TOngam Says: May be we will use this part
-			//		if(roomcode == ''){
-			//			alert('Choose your room.');
-			//			return false;
-			//		}
-
-			//		var roomcode = $('#roomform').val();
-
-					var start = $('#dtpickfrom').datepicker('getDate');
-					var end   = $('#dtpickto').datepicker('getDate');
-					var days   = (end - start)/1000/60/60/24;
-			//		if(roomcode == ''){
-			//			alert('Chose your room.');
-			//			return false;
-			//		}else 
-					if(days<0 || start == '' || end == ''){
-						alert('Invalid date selection.');
-						return false;
-					}
-					
-			//		window.open('booking/?check_in_date=' + $('#dtpickfrom').val() + '&check_out_date=' + $('#dtpickto').val() + '&number_of_rooms=1&adults=1&children=0');
-					window.open('http://www.agoda.com/the-cherry-homes-hotel-residence/hotel/bandung-id.html');
-				});
-				
-				/* Date Picker */
-				$( "#dtpickto" ).datepicker();
-				
-				var today = new Date();
-				var nextdate = new Date(today);
-				var dd = today.getDate();
-				var mm = today.getMonth()+1; //January is 0!
-
-				var yyyy = today.getFullYear();
-				if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} today = yyyy+'-'+mm+'-'+dd;
-				$( "#dtpickfrom" ).val(today);
-				
-				nextdate.setDate(nextdate.getDate()+1);
-				var tomorrow = new Date(nextdate);
-				var dd = tomorrow.getDate();
-				var mm = tomorrow.getMonth()+1; //January is 0!
-				var yyyy = tomorrow.getFullYear();
-				if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} tomorrow = yyyy+'-'+mm+'-'+dd;
-				$( "#dtpickto" ).val(tomorrow);
-				
-				$("#dtpickfrom").datepicker({
-					minDate: 0,
-					onSelect: function(dateText, inst) {
-						var actualDate = new Date(dateText);
-						// Next day
-						var newDate = new Date(actualDate.getFullYear(), actualDate.getMonth(), actualDate.getDate()+1);
-			//			var newDate = new Date(actualDate.getFullYear(), actualDate.getMonth(), actualDate.getDate());
-						$('#dtpickto').datepicker('option', 'minDate', newDate );
-					}
-				});
-				
-				
-				/* Slider by Tongam */
-				
-				var imagesfile = [ "assets/home.jpg", "assets/header1.jpg", "assets/header2.jpg", "assets/header3.jpg", "assets/header4.jpg", "assets/header5.jpg", "assets/header6.jpg" ];
-				var stepdelay = 7000;
-				var imagepos = 0;
-				var image = $('#slide-image');
-				
-				function changeImage(){
-					if(imagepos > imagesfile.length-1){
-						imagepos = 0; //Reset
-					}else if(imagepos < 0){
-						imagepos = imagesfile.length-1;
-					}
-					image.fadeOut(1000, function () {
-						image.css("background", "url('" + imagesfile[imagepos] + "') no-repeat scroll center center");
-						image.fadeIn(1000);
-					});
-				}
-				
-				/* Preload */
-				$.fn.preload = function() {
-					this.each(function(){
-						$('<img/>')[0].src = this;
-					});
-				}
-				$(imagesfile).preload(); //go go go
-				
-				/* First starting image */
-				changeImage(imagepos);
-				/* Next Slider */
-				setInterval(function() {
-					imagepos++;
-					changeImage();
-				}, stepdelay);
-				/* Navigation */
-				$('#next').click(function(e) {
-					imagepos++;
-					changeImage();
-				});
-				$('#prev').click(function(e) {
-					imagepos--;
-					changeImage();
-				});
-				/* Eof Slider */
-				
-				/* Form Submit for contact */
-				function isValidEmailAddress(emailAddress) {
-					var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
-					return pattern.test(emailAddress);
-				}
-				
-				$('#sendmail').submit(function() {
-					if($('#name').val() == ""){
-						alert('Please input your name.');
-						$('#name').focus();
-						return false;
-					}
-					if(!isValidEmailAddress($('#email').val())){
-						alert('Please input correct email.');
-						$('#email').focus();
-						return false;
-					}
-					if($('#subject').val() == ""){
-						alert('Please input your subject.');
-						$('#subject').focus();
-						return false;
-					}
-					if($('#message').val() == ""){
-						alert('Please input your message.');
-						$('#message').focus();
-						return false;
-					}
-					
-					if(!confirm('Are you sure to send this message?'))
-					return false;
-					
-					return true;
-				});
-				
-				$('#submitmail').click(function(e) {
-					$('#sendmail').submit();
-				});
 			});
 
-			// Room Animation Images Preview
-			var curr_index = 0;
+			function slideShow() {
 
-			$(document).ready(function () {
+				//Set the opacity of all images to 0
+				$('#gallery a').css({opacity: 0.0});
 				
-			    $("#button-preview-left").click(function(e) {
-					curr_index--;
-					if(curr_index < 0){
-						curr_index = ($("a.preview").length-1);
-					}
-					showPreview(curr_index, false);
-					e.preventDefault();
-					e.stopPropagation();
-			    });
+				//Get the first image and display it (set it to full opacity)
+				$('#gallery a:first').css({opacity: 1.0});
 				
-			    $("#button-preview-right").click(function(e) {
-					curr_index++;
-					if(curr_index > ($("a.preview").length-1)){
-						curr_index = 0;
-					}
-					showPreview(curr_index, false);
-					e.preventDefault();
-					e.stopPropagation();
-			    });
+				//Set the caption background to semi-transparent
+				$('#gallery .caption').css({opacity: 0.7});
 
-			    $("a.preview").click(function(e) {
-					curr_index = $("a.preview").index(this);
-					showPreview(curr_index, true);
-					e.preventDefault();
-					e.stopPropagation();
-			    });
+				//Resize the width of the caption according to the image width
+				$('#gallery .caption').css({width: $('#gallery a').find('img').css('width')});
 				
-				$('#image-preview-container').click(function(e) {
-					e.stopPropagation();
-				});
+				//Get the caption of the first image from REL attribute and display it
+				$('#gallery .content').html($('#gallery a:first').find('img').attr('rel'))
+				.animate({opacity: 0.7}, 400);
 				
-				function showPreview(index, anim) {
-					var imgUrl = $("a.preview").eq(index).attr("href");
-					$('#image-preview').html('<img src="assets/loading.gif">');
-					$('<img src="'+ imgUrl +'">').load(function() {
-						$('#image-preview').html('');
-						$(this).appendTo('#image-preview');
-					})
-					if(anim) {
-						if (!$("#image-preview-container").is(":hidden")) {
-							$("#image-preview-container").hide();
-						}
-						$("#image-preview-container").slideDown("fast");
-						
-						$("#image-preview-container").dialog({
-							autoOpen: true,
-							closeOnEscape: true,
-							resizable: true,
-							draggable: false,
-							stack: true,
-							open: function(event, ui) { 
-								//hide close button.
-								$(this).parent().children('.ui-dialog-titlebar').hide();
-							},
-							modal: true
-						});
-					}
-				}
-			});
+				//Call the gallery function to run the slideshow, 6000 = change to next image after 6 seconds
+				setInterval('gallery()',6000);
+				
+			}
+
+			function gallery() {
+				
+				//if no IMGs have the show class, grab the first image
+				var current = ($('#gallery a.show')?  $('#gallery a.show') : $('#gallery a:first'));
+
+				//Get next image, if it reached the end of the slideshow, rotate it back to the first image
+				var next = ((current.next().length) ? ((current.next().hasClass('caption'))? $('#gallery a:first') :current.next()) : $('#gallery a:first'));	
+				
+				//Get next image caption
+				var caption = next.find('img').attr('rel');	
+				
+				//Set the fade in effect for the next image, show class has higher z-index
+				next.css({opacity: 0.0})
+				.addClass('show')
+				.animate({opacity: 1.0}, 1000);
+
+				//Hide the current image
+				current.animate({opacity: 0.0}, 1000)
+				.removeClass('show');
+				
+				//Set the opacity to 0 and height to 1px
+				$('#gallery .caption').animate({opacity: 0.0}, { queue:false, duration:0 }).animate({height: '1px'}, { queue:true, duration:300 });	
+				
+				//Animate the caption, opacity to 0.7 and heigth to 100px, a slide up effect
+				$('#gallery .caption').animate({opacity: 0.7},100 ).animate({height: '100px'},500 );
+				
+				//Display the content
+				$('#gallery .content').html(caption);	
+			}
 		</script>
 		<div id="ui-datepicker-div"></div>
 	</body>
